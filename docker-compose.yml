@@ -1,0 +1,25 @@
+
+version: "3"
+services:
+    frontend:
+        container_name: sod_fornt_end
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: sod/smart_office_door_client
+        ports:
+            - "80:3000"
+        volumes:
+            - ./client:/app
+    backend:
+        container_name: sod_back_end
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: sod/smart_office_door_server
+        ports:
+            - "3333:3333"
+        volumes:
+            - ./server:/app
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "smart_office_door",
+  "version": "1.0.0",
+  "description": "Smart Office Door with Computer Vision",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i &&node index.js",
+    "server": "nodemon index.js"
+  },
+  "author": "Nadine Mostafa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "image-js": "^0.21.9",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.2",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadineMoustafa/Smart_office_door.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/NadineMoustafa/Smart_office_door/issues"
+  },
+  "homepage": "https://github.com/NadineMoustafa/Smart_office_door#readme"
+}
